@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayangnya Anaa ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Kontrol Musik -->
+    <div class="music-control" onclick="toggleMusic()" id="musicControl">
+        <span id="musicIcon">🔊</span>
+        <span id="musicText">Musik: ON</span>
+    </div>
+
+    <div class="stars" id="stars"></div>
+
+    <!-- Audio Background -->
+    <audio id="bgMusic" loop>
+        <source src="https://cdnjs.cloudflare.com/ajax/libs/music-metadata-browser/2.5.10/test/samples/mp3/silent.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <!-- Layar Pembuka -->
+        <div id="introScreen" class="intro-screen">
+            <div class="envelope" onclick="openLetter()">💌</div>
+            <h1>Sesuatu untuk yang namanya M.Rafli Assidiq...</h1>
+            <p class="instruction">Klik amplopnya wehh!</p>
+        </div>
+
+        <!-- Konten Utama -->
+        <div id="mainContent" class="main-content hidden">
+            <h1>🎉 Selamat Ulang Tahun Sayaaaang! 🎉</h1>
+            
+            <div class="cake-blow" onclick="blowCakeCandle()" id="mainCake">
+                <div class="candle-top" id="mainCandle">🕯️</div>
+                🎂
+            </div>
+            <p style="color: #bfdbfe; margin: 10px 0 30px 0; font-size: 1.2em;">Klik kuenyaa byyy! 🎂</p>
+
+            <div class="message-box">
+                Di hari istimewa ini (dah lewat sebulan keknyy), Anaa mo bilnggg slamaatt yaawww pala duaaa wkwkwk.
+                Maaf yaaaw Anaa kalah sama ketakutann Anaa dkatt maa bbyy. Tapii Anaa slaluu doa utk byyy dri jauhh.
+                Terima kasih sudah menjadi alasan terbaik Anaaa untuk kuaatt setiap hari. 💪❤️
+            </div>
+
+            <div class="interactive-section">
+                <button class="button" onclick="spreadLove()">💙 Kirim byyy</button>
+                <button class="button" onclick="showWishes()">🎁 Liaaat Harapan Anaaa</button>
+            </div>
+
+            <div class="love-counter" id="loveCounter" style="margin: 20px 0;">0</div>
+            <p style="color: #bfdbfe; margin-bottom: 20px; font-size: 0.95em;">Cinta yang sudah terkirim 💙</p>
+
+            <div class="cake-container" id="cakeContainer">
+                <div class="candle" id="candle">🕯️</div>
+                <div class="cake" onclick="cakeClick()">🎂</div>
+            </div>
+
+            <div class="photo-frame" onclick="changeEmoji()">
+                <span id="emoji">😍</span>
+            </div>
+
+            <!-- Kuis -->
+            <div class="quiz-section" id="quizSection">
+                <h2 style="color: #fff; margin-bottom: 20px;">Siapa yang paling sayang sama Sidiiq?</h2>
+                <div class="quiz-option" onclick="answerQuiz(1)">A. Harmonia</div>
+                <div class="quiz-option" onclick="answerQuiz(2)">B. Audy</div>
+                <div class="quiz-option" onclick="answerQuiz(3)">C. Anaaa! 💙</div>
+                <div class="quiz-option" onclick="answerQuiz(4)">D. Semua jawaban benar, tapi Anaaa paling sayang byyy! 😊</div>
+                <p id="quizResult" style="color: #fbbf24; margin-top: 20px; font-size: 1.2em;"></p>
+            </div>
+
+            <div class="signature">
+                Dengan sepenuh hati,<br>
+                Yang selalu sayanggg bbyy 💙
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup untuk Harapan -->
+    <div class="popup-overlay" id="wishesPopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closeWishesPopup()">✕</button>
+            <h2>🎁 Harapan Anaaa 🎁</h2>
+            <div class="wishes-list">
+                <div class="wish-item">🌟 Semoga harapaan byy tercapai tahun ini</div>
+                <div class="wish-item">💪 Byyy harusss sehaaatt dan kuaatt</div>
+                <div class="wish-item">✨ Byyy slaluu senaanngg</div>
+                <div class="wish-item">🎯 Sukses dalam semua yang bbyyy lakukan</div>
+                <div class="wish-item">❤️ Byyyy makinnn sayangg Anaaa</div>
+                <div class="wish-item">🌈 Harii-hariii bbyy seruuu</div>
+                <div class="wish-item">💝 Bbyyy selalu dikelilingi orang-orang baiik</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
